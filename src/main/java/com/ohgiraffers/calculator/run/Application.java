@@ -1,5 +1,7 @@
 package com.ohgiraffers.calculator.run;
 
+import com.ohgiraffers.calculator.feature.Plus;
+
 public class Application {
 
     public static void main(String[] args) {
@@ -25,5 +27,11 @@ public class Application {
 
         */
 
+        Plus plus= new Plus(20,30);
+        int sum= plus.getNumber1()+ plus.getNumber2();
+        System.out.println("sum = " + sum);
+
+
+        
     }
 }
