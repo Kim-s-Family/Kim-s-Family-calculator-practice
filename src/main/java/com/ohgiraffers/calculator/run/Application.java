@@ -1,5 +1,9 @@
 package com.ohgiraffers.calculator.run;
 
+import com.ohgiraffers.calculator.feature.Minus;
+
+import static com.ohgiraffers.calculator.feature.Minus.MinusApp;
+
 public class Application {
 
     public static void main(String[] args) {
@@ -25,5 +29,14 @@ public class Application {
 
         */
 
+        MinusApp();
+
     }
+
+    public static int minusNumber(int number1, int number2) {
+        int result = number1 - number2;
+        return result;
+    }
+
+
 }
