@@ -1,8 +1,12 @@
 package com.ohgiraffers.calculator.run;
 
+
 import com.ohgiraffers.calculator.feature.Minus;
 
 import static com.ohgiraffers.calculator.feature.Minus.MinusApp;
+
+import com.ohgiraffers.calculator.feature.Plus;
+
 
 public class Application {
 
@@ -31,6 +35,14 @@ public class Application {
 
         MinusApp();
 
+
+        Plus plus= new Plus(20,30);
+        int sum= plus.getNumber1()+ plus.getNumber2();
+        System.out.println("sum = " + sum);
+
+
+        
+ 
     }
 
     public static int minusNumber(int number1, int number2) {
